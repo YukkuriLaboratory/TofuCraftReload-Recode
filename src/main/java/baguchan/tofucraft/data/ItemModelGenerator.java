@@ -120,6 +120,8 @@ public class ItemModelGenerator extends ItemModelProvider {
 		itemBlockFlat(TofuBlocks.SAPLING_APRICOT.get());
 		toBlock(TofuBlocks.LEAVES_APRICOT.get());
 		singleTex(TofuItems.APRICOT.get());
+		singleTex(TofuItems.APRICOTJERRY_BOTTLE.get());
+		singleTex(TofuItems.APRICOTJERRY_BREAD.get());
 		singleTex(TofuItems.APRICOTSEED.get());
 		singleTex(TofuItems.KYONINSO.get());
 

@@ -188,6 +188,11 @@ public class CraftingGenerator extends CraftingDataHelper {
 
 		foodCookingButNoCampfire(TofuItems.GELATINRAW, TofuItems.GELATIN, 0.1F, consumer);
 
+		ShapelessRecipeBuilder.shapeless(TofuItems.APRICOTJERRY_BREAD.get(), 2)
+				.requires(TofuItems.APRICOTJERRY_BOTTLE.get())
+				.requires(Items.BREAD)
+				.unlockedBy("has_item", has(TofuItems.APRICOTJERRY_BOTTLE.get()))
+				.save(consumer);
 		ShapelessRecipeBuilder.shapeless(TofuItems.APRICOTSEED.get(), 1)
 				.requires(TofuItems.APRICOT.get())
 				.unlockedBy("has_item", has(TofuItems.APRICOT.get()))
